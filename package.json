@@ -1,5 +1,5 @@
 {
-  "name": "blogue",
+  "name": "crud_em_node",
   "version": "1.0.0",
   "description": "Um projeto simples de como funciona um CRUD usando ferramentas nodejs",
   "main": "app.js",
@@ -20,7 +20,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fatmanpiu/CRUD_EM_NODEJS"
+    "url": "git+https://github.com/Fatmanpiu/CRUD_EM_NODEJS.git"
   },
   "bugs": {
     "url": "https://github.com/Fatmanpiu/CRUD_EM_NODEJS/issues"
