@@ -1,0 +1,29 @@
+#post{
+    resize: none;
+    display: flex;
+    margin: auto;
+    padding: 0;
+    width: 35vmax;
+}
+.input-number{
+    width: 50px;
+   
+}
+.Titulo_conteudo{
+    padding: 10vmin;
+    background-color: black;
+    margin: auto;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.Titulo_conteudo h2{
+    margin: 0;
+    background-color: white;
+}
+.Titulo_conteudo p{
+    word-wrap: break-word;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(199, 131, 131);
+}
