@@ -1,17 +1,27 @@
 {
-  "name": "crud_nodejs",
+  "name": "blogue",
   "version": "1.0.0",
-  "description": "# CRUD_EM_NODEJSUm projeto desenvolvido com Node.js, Express, Sequelize e outras tecnologias, com o objetivo de implementar operações CRUD (Create, Read, Update, Delete). Este código permite a criação, leitura, atualização e exclusão de dados em um sistema, proporcionando uma interface eficiente para interação com o banco de dados.",
-  "main": "index.js",
+  "description": "Um projeto simples de como funciona um CRUD usando ferramentas nodejs",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "Carlos souza <Ca850075@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "nodemon": "^3.1.0",
+    "sequelize": "^6.37.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fatmanpiu/CRUD_EM_NODEJS.git"
+    "url": "git+https://github.com/Fatmanpiu/CRUD_EM_NODEJS"
   },
-  "author": "Carlos Souza <ca850075@gmail.com>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Fatmanpiu/CRUD_EM_NODEJS/issues"
   },
