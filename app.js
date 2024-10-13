@@ -25,7 +25,7 @@ app.get('/colecao', (req,res)=>{
     })
     
 })
-app.get('/editar/:id',(req,res)=>{
+app.get('/editar?:id',(req,res)=>{
     res.render("editar")
    //const edit = Post.findByPk({id:req.params.id})
 

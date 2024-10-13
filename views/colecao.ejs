@@ -14,7 +14,7 @@
                 <h2><%= post.titulo %></h2>
                 <p><%= post.conteudo %></p>
             </li>
-            <a href="/editar/<%= post.id %>"><button>Editar</button></a>
+            <a href="/editar?n=<%= post.id %>"><button>Editar</button></a>
             <a id="deletar" href="/delete/<%= post.id %>"><button >Deletar</button></a>
         <% }) %>
     </ul>
