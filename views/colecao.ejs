@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>coleção</title>
 </head>
-<body>
-    <a href="/">Cria um novo post</a>
-    <h1>Suas postagens</h1>
-    <ul>
-        <% posts.forEach((post)=>{%>
-            <li>
-                <h2><%= post.titulo %></h2>
-                <p><%= post.conteudo %></p>
-            </li>
-            <a href="/editar?n=<%= post.id %>"><button>Editar</button></a>
-            <a id="deletar" href="/delete/<%= post.id %>"><button >Deletar</button></a>
-        <% }) %>
-    </ul>
+<body class="corPrimaria">
+        
+        <h1 class="p-2 bg-light text-dark"><i class="bi bi-bookmark-check-fill"></i> Suas notas</h1>
+        <a href="/" class="text-danger"><i class="bi bi-arrow-left px-1"></i> Cria uma nova nota</a>
+    <section class=" container d-flex flex-column justify-content-center " >
+        <div class="m-auto p-2">
+     
+                <% posts.forEach((post)=>{%>
+                    <h2><%= post.titulo %></h2>
+                    <div class="caixaDeTexto">
+                        <p><%= post.conteudo %></p>
+                    </div>
+                    <div class="d-flex justify-content-end my-2">
+                        <a class="btn btn-primary mx-1" href="/editar?n=<%= post.id %>">Editar</a>
+                        <a class="btn btn-danger" id="deletar" href="/delete/<%= post.id %>">Deletar</a>
+                    </div>
+                <% }) %>
+
+
+        </div>
+    </section>
+
 <script src="script/index.js"></script>
 </body>
 </html>

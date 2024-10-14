@@ -1,3 +1,7 @@
+.corPrimaria{
+    background-color: #212529;
+    color: aliceblue;
+}
 #post{
     resize: none;
     display: flex;
@@ -26,4 +30,12 @@
     padding: 0;
     margin: 0;
     background-color: rgb(199, 131, 131);
+}
+.caixaDeTexto{
+    word-break: break-all;
+     overflow-x: none; 
+     overflow-y: scroll;
+     box-sizing: content-box;
+     height: 30vh;
+     width: 30vw;
 }
