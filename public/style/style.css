@@ -37,5 +37,12 @@
      overflow-y: scroll;
      box-sizing: content-box;
      height: 30vh;
-     width: 30vw;
+}
+.tamanhos{
+    width: 50vw;
+}
+@media(max-width: 500px){
+    .tamanhos{
+        width: 90vw;
+    }
 }

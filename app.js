@@ -41,8 +41,8 @@ app.post('/up',function(req,res){
         })
     
     }else{
-
-        res.send('<h1>Você não pode criar uma nota sem nada. <a href="/colecao">Voltar</a></h1> ');
+        res.render("Erros/SemTexto")
+        //res.send('<h1>Você não pode criar uma nota sem nada. <a href="/colecao">Voltar</a></h1> ');
         return
 
     }
@@ -70,7 +70,8 @@ app.post('/add', function(req,res){
         })
 
     }else{
-        res.send('<h1>Você não pode criar uma nota sem nada.<a href="/">Voltar</a></h1> ');
+        res.render("Erros/SemTexto")
+        //res.send('<h1>Você não pode criar uma nota sem nada.<a href="/">Voltar</a></h1> ');
         
     }
 
